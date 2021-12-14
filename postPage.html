@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Posts</title>
+	<link rel="stylesheet" href="styleForPosts.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+	<header class="posts-header">
+		<h1 class="posts-page-header">MeMe.com</h1>
+	</header>
+
+	<div class="container-bg">
+		<main class="container">
+			<aside class="profile">
+				<figure class="profile-avatar">
+					<img src="index.jpg" alt="NS" class="profile-image" width="84" height="84" />
+					<figcaption class="profile-name" id="profile-name"></figcaption>
+				</figure>
+
+				<div class="profile-details">
+					<button type ="click" class="profile-button" id="logout-btn">Log Out</button>
+				</div>
+			</aside>
+			<section class="posts">
+				<header class="pots-section-header">
+					<figure class="profile-avatar post-section-header-avatar">
+						<img src="index.jpg" alt="BP" class="profile-image">
+					</figure>
+					<div class="post-section-input-container">
+						<form method="POST" id="new-post">
+							<input type="text" placeholder="Say something" id="new-post-text">
+							<button class="far fa-comment-alt" ></button>
+						</form>
+					</div>
+				</header>
+				<div class="lds-default" id = "loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+				<section class="posts-section" id="post-container">
+				</section>
+			</section>
+		</main>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+	<script>
+  		var config = {
+    		apiKey: "AIzaSyCbG8LJQvmcvbVyl2D73xiMs8AeJuAb7MM",
+      		authDomain: "meme-com.firebaseapp.com",
+      		databaseURL: "https://meme-com.firebaseio.com",
+      		projectId: "meme-com",
+      		storageBucket: "meme-com.appspot.com",
+      		messagingSenderId: "804750272098",
+      		appId: "1:804750272098:web:1cdfb550a0250c5ff4d33b",
+			measurementId: "G-N65MQHX0L8"
+  		};
+  		firebase.initializeApp(config);
+  		const auth = firebase.auth();
+  		const db = firebase.firestore();
+	</script>
+	<script src="scriptForPosts.js"></script>
+</body>
+</html>

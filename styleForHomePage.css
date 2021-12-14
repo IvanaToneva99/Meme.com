@@ -1,0 +1,57 @@
+#boxed{
+    width:150px;
+    padding:150px;
+    height: 50px;
+    background-color:white;
+    margin: auto;
+    border-radius: 5rem;
+}
+.button
+{
+    background-color:#42CE84;
+    color:black;
+    padding: 20px 20px;
+    width:300px;
+    height: 75px;
+    font-size: x-large;
+    font-style:italic;
+    border-radius: 2.5rem;
+  position: static;
+  margin-left: 75px;
+  margin-bottom: auto;
+  top: 62%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+   
+}
+.button1
+{
+    background-color:#42CE84;
+    color:black;
+    padding: 20px 20px;
+    width:300px;
+    height: 75px;
+    font-size: x-large;
+    font-style:italic;
+    border-radius: 2.5rem; 
+    margin: 50px;
+    margin-bottom: 50px;
+    margin-left: 75px;
+  position: static;
+
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.auth-title
+{
+ text-align: center;
+ font-size: 100px;
+ color: black;
+}
+body
+{
+    background-image:linear-gradient(-100deg,#42CE84 0%,#4F68A4 100%);
+}

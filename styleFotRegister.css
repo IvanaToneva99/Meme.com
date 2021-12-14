@@ -1,0 +1,60 @@
+body{
+    background-image:linear-gradient(-100deg,#42CE84 0%,#4F68A4 100%);
+    font-family: Arial, Helvetica, sans-serif
+}
+.auth-title{
+ text-align: center;
+ font-size: 100px;
+ color:greenyellow;
+ 
+}
+.container{
+    border-radius: 0.5rem;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem;
+    max-width: 32rem;
+    margin: auto;
+    max-height: 90%;
+    width: 90%;
+    vertical-align: middle;
+
+}
+.auth-subtitle
+{ 
+    text-align: center;
+    font-size:larger;
+    font-style: oblique;
+
+}
+  input[type=text], input[type=password],input[type=email],input[type=rpassword]
+  {
+    width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size:x-large;
+    border-radius: 2.5rem;
+
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  .errors
+ {
+   color:red;
+   font-weight: bold;
+ }
